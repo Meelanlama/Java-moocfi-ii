@@ -35,7 +35,7 @@ public class LiquidContainers {
                 firstContainer -= firstContainer;
                 } else if (secondContainer + amount > 100) {
                     secondContainer = 100;
-                    firstContainer -= firstContainer;
+                    firstContainer -= amount;
                 } else if (amount > 0) {
                     firstContainer -= amount;
                     secondContainer += amount;

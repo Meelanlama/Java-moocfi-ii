@@ -32,6 +32,7 @@ public class LiquidContainers2 {
                     first.remove(amount);
                 } else if (amount + second.contains() > 100) {
                     second.add(100);
+                    first.remove(amount);
                 } else {
                     first.remove(amount);
                     second.add(amount);

@@ -21,7 +21,7 @@ public class DictionaryOfManyTranslations {
     }
 
     public void add(String word, String translation) {
-        //put if absent is if dictionary hashmap doesnot contains that key already
+        //putIfAbsent is if dictionary hashmap doesnot contains that key already than add the key
         this.dictionary.putIfAbsent(word, new ArrayList<>());
 
         //if the data is not in list then only added
