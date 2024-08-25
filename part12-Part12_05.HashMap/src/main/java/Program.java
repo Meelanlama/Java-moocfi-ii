@@ -9,5 +9,4 @@ public class Program {
         Pair<String, Integer> pair = new Pair<>("One", 1);
         System.out.println(pair.getKey() + "-" + pair.getValue());
     }
-
 }
