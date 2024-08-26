@@ -17,15 +17,48 @@ public class MagicSquare {
 
     // implement these three methods
     public ArrayList<Integer> sumsOfRows() {
-        return new ArrayList<>();
+        ArrayList<Integer> rowSums = new ArrayList<>();
+
+        for (int i = 0; i < square.length; i++) {
+            int sumOfRow = 0;
+            for (int j = 0; j < square[i].length; j++) {
+                sumOfRow += square[i][j];
+            }
+            rowSums.add(sumOfRow);
+        }
+        return rowSums;
     }
 
     public ArrayList<Integer> sumsOfColumns() {
-        return new ArrayList<>();
+        ArrayList<Integer> columnSums = new ArrayList<>();
+
+        //iterating over the columns, i represent column index, square[0].length gives the number of columns in first row
+        for (int i = 0; i < square[0].length; i++) {
+            int sum = 0;
+            for (int j = 0; j < square.length; j++) {
+                //Row,j and Column,i
+                sum += square[j][i];
+            }
+            columnSums.add(sum);
+        }
+
+        return columnSums;
     }
 
     public ArrayList<Integer> sumsOfDiagonals() {
-        return new ArrayList<>();
+        ArrayList<Integer> diagonalsSum = new ArrayList<>();
+        //top-left to bottom-right diagonal
+        int sumMainDiagonal = 0;
+        //top-right to bottom-left diagonal
+        int sumAntiDiagonal = 0;
+
+        for (int i = 0; i < square.length; i++) {
+            sumMainDiagonal += square[i][i];
+            sumAntiDiagonal += square[i][square.length - 1 - i];
+        }
+        diagonalsSum.add(sumMainDiagonal);
+        diagonalsSum.add(sumAntiDiagonal);
+        return diagonalsSum;
     }
 
     // ready-made helper methods -- don't touch these
