@@ -15,7 +15,6 @@ public class HurraaSovellus extends Application {
         Button nappi = new Button("Hurraa!");
         pane.setCenter(nappi);
 
-
         Scene scene = new Scene(pane, 600, 400);
 
         stage.setScene(scene);
