@@ -8,7 +8,7 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.stage.Stage;
 
-public class UnfairAdvertisementApplication extends Application {
+public class UnfairAdvertisementApplication extends Application{
 
     @Override
     public void start(Stage window) {
