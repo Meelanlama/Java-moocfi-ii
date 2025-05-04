@@ -2,7 +2,7 @@
 
 These are my solutions to all the exercises from **Part II** of the free Massive Open Online Course (MOOC) offered by the **University of Helsinki** on **Object-Oriented Programming: Java Programming II**.
 
-## 📘 Course Overview
+## Course Overview
 
 This part of the course builds upon the fundamentals from Part I, introducing more advanced topics in Java programming, including:
 
@@ -10,7 +10,6 @@ This part of the course builds upon the fundamentals from Part I, introducing mo
 
 #### Part 1
 
-- Short recap
 - Hash Map
 - Similarity of objects
 - Grouping data using hash maps
@@ -65,4 +64,5 @@ All exercises from **Part II** have been completed.
 A certificate of completion has been obtained.
 
 ![Certificate - Java Programming II](./My%20Solutions/certificate-java-programming-ii.png)
->>>>>>> 993dbd4 (Small changes)
+
+---
